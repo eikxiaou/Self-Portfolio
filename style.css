@@ -90,7 +90,7 @@ a:hover {
   width: 100%;
   height: 2px;
   background-color: black;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links {
@@ -101,7 +101,7 @@ a:hover {
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -111,7 +111,7 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -295,13 +295,12 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 0 1 calc(33.33% - 20px);
+  flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .section-container {
@@ -332,9 +331,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: auto;
 }
 
 .article-container {
@@ -359,11 +355,8 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-/* PROJECTS SECTION */
-
 #projects {
   position: relative;
-  margin-bottom: auto;
 }
 
 .color-container {
@@ -387,17 +380,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* Adjust details-container width for smaller screens */
-.details-container {
-  width: calc(50% - 1rem); /* Set width to 50% minus margin */
-}
-
-/* Set flex-basis to 50% for details-container on screens with maximum width of 768px */
-@media screen and (max-width: 768px) {
-  .details-container {
-    flex-basis: calc(100% - 1rem); /* Set width to 100% minus margin */
-  }
-}
 /* CONTACT */
 
 #contact {
@@ -447,11 +429,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-/* Set flex-basis to 100% for details-container on smaller screens */
-@media screen and (max-width: 768px) {
-  .details-container {
-    flex-basis: 100%;
-  }
 }
