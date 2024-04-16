@@ -333,6 +333,10 @@ section {
   flex-direction: column;
 }
 
+.project_content {
+  justify-content: left;
+}
+
 .article-container {
   display: flex;
   text-align: initial;

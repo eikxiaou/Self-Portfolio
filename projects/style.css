@@ -430,3 +430,25 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+#carouselExampleControls {
+  height: 400px; /* Adjust the height as per your requirement */
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-height: 100%; /* Ensures the image fits within the carousel height */
+  max-width: 100%; /* Ensures the image fits within the carousel width */
+  width: auto; /* Ensures that the image width adjusts based on the height */
+  height: auto; /* Ensures that the image height adjusts based on the width */
+  margin: auto; /* Centers the image horizontally */
+}
